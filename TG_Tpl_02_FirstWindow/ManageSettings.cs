@@ -11,21 +11,22 @@ namespace TG_Tpl_02_FirstWindow
   {
     static IConfigurationRoot configurationRoot; // For parameters
 
-    static bool GetManagedParams (string[] args, out AppParams appParams, out Dictionary<string,string> cmdLineParams)
+    static bool GetManagedParams(string[] args, out AppParams appParams, Dictionary<string, string> cmdLineParams)
     {
       bool blRc = true;
 
       appParams = new AppParams();
       using IHost host = CreateHostBuilder(args).Build();
       configurationRoot.GetSection(nameof(AppParams)).Bind(appParams);
-      IConfigurationSection cmdLineStagingSection = configurationRoot.GetSection("ACmdLineParam");
 
-      cmdLineParams = new();
-      if (cmdLineStagingSection != null && cmdLineStagingSection.Value != null)
+      foreach (string param in cmdLineParams.Keys)
       {
-        cmdLineParams.Add("ACmdLineParam", cmdLineStagingSection.Value);
+        IConfigurationSection cmdLineStagingSection = configurationRoot.GetSection(param);
+        if (cmdLineStagingSection != null && cmdLineStagingSection.Value != null)
+        {
+          cmdLineParams[param] = cmdLineStagingSection.Value;
+        }
       }
-
       return blRc;
     }
 

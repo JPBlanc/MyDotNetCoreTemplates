@@ -88,8 +88,7 @@ namespace TG_Tpl_02_FirstWindow
       // Creates a menubar, the item "New" has a help menu.
       menu = new MenuBar(new MenuBarItem[] {
         new MenuBarItem ("_File", new MenuItem [] {
-          new MenuItem ("_Quit", "", () => Quit ()  )
-        })
+        new MenuItem ("_Quit", "", () => Quit ()  )})
       });
       menu.ColorScheme = Colors.Base;
 
@@ -117,7 +116,7 @@ namespace TG_Tpl_02_FirstWindow
       btChangeUsefullObject.Data = false;
       btChangeUsefullObject.Clicked += OnbtChangeUsefullObjectClicked;
 
-      winTop.Add(lblName, tfName, btStart, tfType, tfType, lblUsefullObjectWorking, tfUsefullObjectWorking, lblUsefullObjects, cbUsefullObjects, btChangeUsefullObject); ;
+      winTop.Add(lblName, tfName, btStart, tfType, tfType, lblUsefullObjectWorking, tfUsefullObjectWorking, lblUsefullObjects, cbUsefullObjects, btChangeUsefullObject);
 
       // Insert the menu
       Add(menu);

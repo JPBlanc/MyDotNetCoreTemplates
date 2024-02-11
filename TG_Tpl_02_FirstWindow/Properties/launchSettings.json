@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TG_Tpl_02_FirstWindow": {
+      "commandName": "Project",
+      "commandLineArgs": "--Param1 Name01"
+    }
+  }
+}

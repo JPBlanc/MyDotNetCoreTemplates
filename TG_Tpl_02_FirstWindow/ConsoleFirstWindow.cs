@@ -14,10 +14,10 @@ namespace TG_Tpl_02_FirstWindow
       {
         Console.WriteLine("Hello World!");
         AppParams appParams;
-        Dictionary<string,string> cmdLineParams;
-        GetManagedParams (args, out appParams, out cmdLineParams);
+        Dictionary<string, string> cmdLineParams = new Dictionary<string, string>() { { "Param1", null }, { "Param2", null } };
+        GetManagedParams (args, out appParams, cmdLineParams);
 
-        string ACmdLineParam = cmdLineParams["ACmdLineParam"];
+        string ACmdLineParam = cmdLineParams["Param1"];
 
         Application.Init();
 
