@@ -12,8 +12,8 @@ namespace TG_Tpl_01_Params
       {
         Console.WriteLine("Hello World!");
         AppParams appParams;
-        Dictionary<string,string> cmdLineParams;
-        GetManagedParams (args, out appParams, out cmdLineParams);
+        Dictionary<string,string> cmdLineParams = new Dictionary<string, string>() { {"Param1", null }, { "Param2", null } };
+        GetManagedParams (args, out appParams, cmdLineParams);
 
         Console.WriteLine($"Default value : {appParams.defaultValue}");
         foreach(var usefullObject in appParams.usefullObjects){

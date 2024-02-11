@@ -16,7 +16,7 @@ namespace TG_Tpl_01_Params
   public class UsefullObject
   {
     public string Name { get; set; }
-    public Type Type { get; set; }
+    public string Type { get; set; }
   }
 
 }

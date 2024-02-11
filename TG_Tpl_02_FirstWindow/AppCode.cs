@@ -103,7 +103,8 @@ namespace TG_Tpl_02_FirstWindow
                 // cancellation fire the thread
                 return;
               }
-            }else{
+            }else
+            {
               // No event existing fire the thread
               return;
             }

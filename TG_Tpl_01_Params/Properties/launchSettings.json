@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TG_Tpl_01_Params": {
+      "commandName": "Project",
+      "commandLineArgs": "--Param1 AZERTY --Param2 1234567"
+    }
+  }
+}
