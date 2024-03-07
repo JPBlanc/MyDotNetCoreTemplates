@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TG_Tpl_01_Params", "TG_Tpl_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TG_Tpl_02_FirstWindow", "TG_Tpl_02_FirstWindow\TG_Tpl_02_FirstWindow.csproj", "{40B2E99B-1E65-48B4-AEAC-F52A4F1F2317}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureVaultFrameworkBasic", "AzureVaultFrameworkBasic\AzureVaultFrameworkBasic.csproj", "{B750B7A7-810C-42E8-B760-AA26E3E2A551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{40B2E99B-1E65-48B4-AEAC-F52A4F1F2317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40B2E99B-1E65-48B4-AEAC-F52A4F1F2317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40B2E99B-1E65-48B4-AEAC-F52A4F1F2317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B750B7A7-810C-42E8-B760-AA26E3E2A551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B750B7A7-810C-42E8-B760-AA26E3E2A551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B750B7A7-810C-42E8-B760-AA26E3E2A551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B750B7A7-810C-42E8-B760-AA26E3E2A551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
